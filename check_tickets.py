@@ -138,17 +138,23 @@ def check_via_scraping(url: str):
             except Exception:
                 pass
 
-        # 3. テキストパターンで判定
+        # 3. テキストパターンで判定 (Ticketmaster / SeatGeek 共通)
         text = soup.get_text().lower()
         available_signals = [
+            # Ticketmaster
             'add to cart', 'buy tickets', 'find tickets',
             'resale tickets', 'fan-to-fan', 'ticket resale',
             'get tickets', 'select your tickets',
+            # SeatGeek
+            'tickets from $', 'from $', 'buy now',
+            'deal score', 'listing',
         ]
         sold_out_signals = [
             'sold out', 'this event is sold out',
             'no tickets available', 'not on sale',
             'tickets are not currently available',
+            # SeatGeek
+            'no tickets found', '0 tickets',
         ]
         for sig in available_signals:
             if sig in text:
