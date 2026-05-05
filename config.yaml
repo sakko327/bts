@@ -84,42 +84,48 @@ shows:
     event_id: "17006429E3514AB0"
 
   # ── 🇪🇸 Spain: Madrid — Estadio Riyadh Air Metropolitano ──
-  # ※ ticketmaster.es の個別イベント URL が取得できなかったためアーティストページ
-  #   → https://www.ticketmaster.es/artist/bts-tickets/958687 を開き
-  #     Jun 26 / Jun 27 の各イベントページ URL をコピーして差し替えてください
-  - name: "ARIRANG - Madrid Day 1 (Jun 26) ※URL要確認"
-    url: "https://www.ticketmaster.es/artist/bts-tickets/958687?language=en-us"
+  - name: "ARIRANG - Madrid Day 1 (Jun 26)"
+    url: "https://www.ticketmaster.es/event/bts-world-tour-arirang-in-madrid-entradas/2003633313"
     event_id: ""
 
-  - name: "ARIRANG - Madrid Day 2 (Jun 27) ※URL要確認"
-    url: "https://www.ticketmaster.es/artist/bts-tickets/958687?language=en-us"
+  - name: "ARIRANG - Madrid Day 2 (Jun 27)"
+    url: "https://www.ticketmaster.es/event/bts-world-tour-arirang-in-madrid-entradas/2017561781"
+    event_id: ""
+
+  # ── 🇧🇪 Belgium: Brussels — King Baudouin Stadium ──
+  - name: "ARIRANG - Brussels Day 1 (Jul 1)"
+    url: "https://www.ticketmaster.be/event/bts-world-tour-arirang-in-brussels-tickets/1734588080"
+    event_id: ""
+
+  - name: "ARIRANG - Brussels Day 2 (Jul 2)"
+    url: "https://www.ticketmaster.be/event/bts-world-tour-arirang-in-brussels-tickets/145702281"
     event_id: ""
 
   # ── 🇬🇧 UK: London — Tottenham Hotspur Stadium ──
   - name: "ARIRANG - London Day 1 (Jul 6)"
-    url: "https://www.ticketmaster.co.uk/bts-world-tour-arirang-in-london-london-06-07-2026/event/35006434E82D5E38"
-    event_id: "35006434E82D5E38"
+    url: "https://www.ticketmaster.co.uk/bts-world-tour-arirang-in-london-london-06-07-2026/event/35006391956A6D74"
+    event_id: "35006391956A6D74"
 
   - name: "ARIRANG - London Day 2 (Jul 7)"
     url: "https://www.ticketmaster.co.uk/bts-world-tour-arirang-in-london-london-07-07-2026/event/3500642CAF9145A0"
     event_id: "3500642CAF9145A0"
 
   # ── 🇩🇪 Germany: Munich — Allianz Arena ──
-  # ※ ticketmaster.de の個別イベント URL が取得できなかったためアーティストページ
-  #   → https://www.ticketmaster.de/artist/bts-tickets/958687 を開き
-  #     Jul 11 / Jul 12 の各イベントページ URL をコピーして差し替えてください
-  - name: "ARIRANG - Munich Day 1 (Jul 11) ※URL要確認"
-    url: "https://www.ticketmaster.de/artist/bts-tickets/958687?language=en-us"
+  - name: "ARIRANG - Munich Day 1 (Jul 11)"
+    url: "https://www.ticketmaster.de/event/bts-world-tour-arirang-in-munich-tickets/463609754"
     event_id: ""
 
-  - name: "ARIRANG - Munich Day 2 (Jul 12) ※URL要確認"
-    url: "https://www.ticketmaster.de/artist/bts-tickets/958687?language=en-us"
+  - name: "ARIRANG - Munich Day 2 (Jul 12)"
+    url: "https://www.ticketmaster.de/event/bts-world-tour-arirang-in-munich-tickets/226137339"
     event_id: ""
 
   # ── 🇫🇷 France: Paris — Stade de France ──
-  # ※ ticketmaster.fr は idmanif 形式。Jul 17/18 が同一ページの可能性あり
-  - name: "ARIRANG - Paris (Jul 17-18)"
+  - name: "ARIRANG - Paris Day 1 (Jul 17)"
     url: "https://www.ticketmaster.fr/fr/manifestation/bts-world-tour-arirang-in-paris-billet/idmanif/647775"
+    event_id: ""
+
+  - name: "ARIRANG - Paris Day 2 (Jul 18)"
+    url: "https://www.ticketmaster.fr/fr/manifestation/bts-world-tour-arirang-in-paris-billet/idmanif/647776"
     event_id: ""
 
   # ── 🇨🇦 Canada: Toronto — Rogers Stadium ──
