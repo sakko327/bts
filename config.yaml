@@ -13,19 +13,136 @@
 # ================================================================
 
 shows:
-  # ── ここに公演 URL を追加してください ──
-  #
-  # - name: "BTS World Tour 2026 - Los Angeles Day 1"
-  #   url: "https://www.ticketmaster.com/event/XXXXXXXXXX"
-  #   event_id: "XXXXXXXXXX"          # (任意) APIを使う場合に必要
-  #
-  # - name: "BTS World Tour 2026 - Los Angeles Day 2"
-  #   url: "https://www.ticketmaster.com/event/YYYYYYYYYY"
-  #   event_id: "YYYYYYYYYY"
-  #
-  # - name: "BTS World Tour 2026 - New York"
-  #   url: "https://www.ticketmaster.com/event/ZZZZZZZZZZ"
-  #   event_id: "ZZZZZZZZZZ"
+  # ================================================================
+  # BTS WORLD TOUR 'ARIRANG' 2026 — 全公演
+  # (event_id は Ticketmaster Discovery API を使う場合に必要)
+  # ================================================================
+
+  # ── 🇺🇸 USA: Tampa, FL — Raymond James Stadium ──
+  - name: "ARIRANG - Tampa Day 1 (Apr 25)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-tampa-tampa-florida-04-25-2026/event/0D006429DD8089EB"
+    event_id: "0D006429DD8089EB"
+
+  - name: "ARIRANG - Tampa Day 2 (Apr 26)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-tampa-tampa-florida-04-26-2026/event/0D006429DDDA8A21"
+    event_id: "0D006429DDDA8A21"
+
+  - name: "ARIRANG - Tampa Day 3 (Apr 28)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-tampa-tampa-florida-04-28-2026/event/0D00642CA71B5453"
+    event_id: "0D00642CA71B5453"
+
+  # ── 🇺🇸 USA: El Paso, TX — Sun Bowl Stadium ──
+  - name: "ARIRANG - El Paso Day 1 (May 2)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-el-el-paso-texas-05-02-2026/event/0C006429DBA5721D"
+    event_id: "0C006429DBA5721D"
+
+  - name: "ARIRANG - El Paso Day 2 (May 3)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-el-el-paso-texas-05-03-2026/event/0C006429DBAC7221"
+    event_id: "0C006429DBAC7221"
+
+  # ── 🇺🇸 USA: Stanford, CA — Stanford Stadium ──
+  - name: "ARIRANG - Stanford Day 1 (May 16)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-stanford-stanford-california-05-16-2026/event/1C006429C95EA2B8"
+    event_id: "1C006429C95EA2B8"
+
+  - name: "ARIRANG - Stanford Day 2 (May 17)"
+    url: "https://www.ticketmaster.com/bts-world-tour-stanford-california-05-17-2026/event/1C006429C9DDA300"
+    event_id: "1C006429C9DDA300"
+
+  - name: "ARIRANG - Stanford Day 3 (May 19)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-stanford-stanford-california-05-19-2026/event/1C006435858268EC"
+    event_id: "1C006435858268EC"
+
+  # ── 🇺🇸 USA: Las Vegas, NV — Allegiant Stadium ──
+  - name: "ARIRANG - Las Vegas Day 1 (May 23)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-las-las-vegas-nevada-05-23-2026/event/17006429D233149A"
+    event_id: "17006429D233149A"
+
+  - name: "ARIRANG - Las Vegas Day 2 (May 24)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-las-las-vegas-nevada-05-24-2026/event/17006429E3354A8C"
+    event_id: "17006429E3354A8C"
+
+  - name: "ARIRANG - Las Vegas Day 3 (May 27)"
+    url: "https://www.ticketmaster.com/bts-world-tour-las-vegas-nevada-05-27-2026/event/17006429E3454A9E"
+    event_id: "17006429E3454A9E"
+
+  - name: "ARIRANG - Las Vegas Day 4 (May 28)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-las-las-vegas-nevada-05-28-2026/event/17006429E3514AB0"
+    event_id: "17006429E3514AB0"
+
+  # ── 🇪🇸 Spain: Madrid — Estadio Riyadh Air Metropolitano ──
+  # ※ ticketmaster.es の個別イベント URL が取得できなかったためアーティストページ
+  #   → https://www.ticketmaster.es/artist/bts-tickets/958687 を開き
+  #     Jun 26 / Jun 27 の各イベントページ URL をコピーして差し替えてください
+  - name: "ARIRANG - Madrid Day 1 (Jun 26) ※URL要確認"
+    url: "https://www.ticketmaster.es/artist/bts-tickets/958687?language=en-us"
+    event_id: ""
+
+  - name: "ARIRANG - Madrid Day 2 (Jun 27) ※URL要確認"
+    url: "https://www.ticketmaster.es/artist/bts-tickets/958687?language=en-us"
+    event_id: ""
+
+  # ── 🇬🇧 UK: London — Tottenham Hotspur Stadium ──
+  - name: "ARIRANG - London Day 1 (Jul 6)"
+    url: "https://www.ticketmaster.co.uk/bts-world-tour-arirang-in-london-london-06-07-2026/event/35006434E82D5E38"
+    event_id: "35006434E82D5E38"
+
+  - name: "ARIRANG - London Day 2 (Jul 7)"
+    url: "https://www.ticketmaster.co.uk/bts-world-tour-arirang-in-london-london-07-07-2026/event/3500642CAF9145A0"
+    event_id: "3500642CAF9145A0"
+
+  # ── 🇩🇪 Germany: Munich — Allianz Arena ──
+  # ※ ticketmaster.de の個別イベント URL が取得できなかったためアーティストページ
+  #   → https://www.ticketmaster.de/artist/bts-tickets/958687 を開き
+  #     Jul 11 / Jul 12 の各イベントページ URL をコピーして差し替えてください
+  - name: "ARIRANG - Munich Day 1 (Jul 11) ※URL要確認"
+    url: "https://www.ticketmaster.de/artist/bts-tickets/958687?language=en-us"
+    event_id: ""
+
+  - name: "ARIRANG - Munich Day 2 (Jul 12) ※URL要確認"
+    url: "https://www.ticketmaster.de/artist/bts-tickets/958687?language=en-us"
+    event_id: ""
+
+  # ── 🇫🇷 France: Paris — Stade de France ──
+  # ※ ticketmaster.fr は idmanif 形式。Jul 17/18 が同一ページの可能性あり
+  - name: "ARIRANG - Paris (Jul 17-18)"
+    url: "https://www.ticketmaster.fr/fr/manifestation/bts-world-tour-arirang-in-paris-billet/idmanif/647775"
+    event_id: ""
+
+  # ── 🇨🇦 Canada: Toronto — Rogers Stadium ──
+  - name: "ARIRANG - Toronto Day 1 (Aug 22)"
+    url: "https://www.ticketmaster.ca/bts-world-tour-arirang-in-toronto-toronto-ontario-08-22-2026/event/1000642B2CB3BB4D"
+    event_id: "1000642B2CB3BB4D"
+
+  - name: "ARIRANG - Toronto Day 2 (Aug 23)"
+    url: "https://www.ticketmaster.ca/bts-world-tour-arirang-in-toronto-toronto-ontario-08-23-2026/event/1000642B2D4EBBDE"
+    event_id: "1000642B2D4EBBDE"
+
+  # ── 🇺🇸 USA: East Rutherford, NJ — MetLife Stadium ──
+  - name: "ARIRANG - East Rutherford Day 1 (Aug 1)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-east-east-rutherford-new-jersey-08-01-2026/event/00006429EB39BB6F"
+    event_id: "00006429EB39BB6F"
+
+  - name: "ARIRANG - East Rutherford Day 2 (Aug 2)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-east-east-rutherford-new-jersey-08-02-2026/event/00006429ED30BCEB"
+    event_id: "00006429ED30BCEB"
+
+  # ── 🇺🇸 USA: Los Angeles (Inglewood), CA — SoFi Stadium ──
+  - name: "ARIRANG - Los Angeles Day 1 (Sep 1)"
+    url: "https://www.ticketmaster.com/bts-world-tour-inglewood-california-09-01-2026/event/0A006429AB3C5EF1"
+    event_id: "0A006429AB3C5EF1"
+
+  - name: "ARIRANG - Los Angeles Day 2 (Sep 2)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-los-inglewood-california-09-02-2026/event/0A006429B1B363A4"
+    event_id: "0A006429B1B363A4"
+
+  - name: "ARIRANG - Los Angeles Day 3 (Sep 5)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-los-inglewood-california-09-05-2026/event/0A006429B2CB6418"
+    event_id: "0A006429B2CB6418"
+
+  - name: "ARIRANG - Los Angeles Day 4 (Sep 6)"
+    url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-los-inglewood-california-09-06-2026/event/0A006429B353645F"
+    event_id: "0A006429B353645F"
 
 # チェック間隔（分）— デフォルト60分
 check_interval_minutes: 60
