@@ -1,0 +1,84 @@
+# ================================================================
+# BTS 2026 World Tour - Ticketmaster 再販モニター設定
+# ================================================================
+#
+# 手順:
+#   1. 下の shows リストに各公演の Ticketmaster URL を追加
+#   2. 使いたい通知方法を enabled: true にして設定を記入
+#   3. python monitor.py で起動
+#
+# Ticketmaster の URL 例:
+#   https://www.ticketmaster.com/event/XXXXXXXXXX
+#   ↑ 最後の英数字10文字が event_id
+# ================================================================
+
+shows:
+  # ── ここに公演 URL を追加してください ──
+  #
+  # - name: "BTS World Tour 2026 - Los Angeles Day 1"
+  #   url: "https://www.ticketmaster.com/event/XXXXXXXXXX"
+  #   event_id: "XXXXXXXXXX"          # (任意) APIを使う場合に必要
+  #
+  # - name: "BTS World Tour 2026 - Los Angeles Day 2"
+  #   url: "https://www.ticketmaster.com/event/YYYYYYYYYY"
+  #   event_id: "YYYYYYYYYY"
+  #
+  # - name: "BTS World Tour 2026 - New York"
+  #   url: "https://www.ticketmaster.com/event/ZZZZZZZZZZ"
+  #   event_id: "ZZZZZZZZZZ"
+
+# チェック間隔（分）— デフォルト60分
+check_interval_minutes: 60
+
+# ================================================================
+# 通知設定
+# ================================================================
+
+notifications:
+
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # ★ おすすめ: ntfy.sh — 完全無料・アカウント不要
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # 手順:
+  #   1. iOS/Android に "ntfy" アプリを入れる
+  #   2. アプリで topic 名 (例: bts-tickets-abc123) を購読
+  #   3. topic に同じ文字列を設定して enabled: true にする
+  # ※ topic 名は推測されないようにランダムな文字列を末尾に付けてください
+  ntfy:
+    enabled: false
+    topic: "bts-tickets-yourname123"  # 好きな名前 + ランダム文字列
+    server: "https://ntfy.sh"         # 自前サーバーがあれば変更可
+
+  # ── Telegram Bot ──
+  # 手順:
+  #   1. Telegram で @BotFather に /newbot → bot_token を取得
+  #   2. 作ったボットに何かメッセージを送る
+  #   3. https://api.telegram.org/bot<TOKEN>/getUpdates で chat_id を確認
+  telegram:
+    enabled: false
+    bot_token: "YOUR_BOT_TOKEN"      # 例: 1234567890:ABCDefgh...
+    chat_id: "YOUR_CHAT_ID"          # 例: 123456789
+
+  # ── Pushover (iOS/Android) ──
+  # https://pushover.net — アプリ買い切り $5 (約750円)
+  # https://pushover.net でアカウント作成 → user_key 取得
+  # → アプリ登録 → app_token 取得
+  pushover:
+    enabled: false
+    app_token: "YOUR_APP_TOKEN"
+    user_key: "YOUR_USER_KEY"
+
+  # ── LINE Notify ──
+  # トークン取得: https://notify-bot.line.me/my/
+  line_notify:
+    enabled: false
+    token: "YOUR_LINE_NOTIFY_TOKEN"
+
+# ================================================================
+# Ticketmaster Discovery API (オプション・推奨)
+# ================================================================
+# 無料 API キー: https://developer.ticketmaster.com/products-and-docs/apis/getting-started/
+# API を使うと HTML スクレイピングより確実に状況を取得できます
+ticketmaster_api:
+  enabled: false
+  api_key: "YOUR_TICKETMASTER_API_KEY"
