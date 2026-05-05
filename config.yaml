@@ -40,6 +40,19 @@ shows:
     url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-el-el-paso-texas-05-03-2026/event/0C006429DBAC7221"
     event_id: "0C006429DBAC7221"
 
+  # ── 🇲🇽 Mexico: Mexico City — Estadio GNP Seguros ──
+  - name: "ARIRANG - Mexico City Day 1 (May 7)"
+    url: "https://www.ticketmaster.com.mx/bts-world-tour-arirang-in-mexico-ciudad-de-mexico-07-05-2026/event/1400642AA1B78268"
+    event_id: "1400642AA1B78268"
+
+  - name: "ARIRANG - Mexico City Day 2 (May 9)"
+    url: "https://www.ticketmaster.com.mx/bts-world-tour-arirang-in-mexico-ciudad-de-mexico-09-05-2026/event/1400642AA32C84D5"
+    event_id: "1400642AA32C84D5"
+
+  - name: "ARIRANG - Mexico City Day 3 (May 10)"
+    url: "https://www.ticketmaster.com.mx/bts-world-tour-arirang-in-mexico-ciudad-de-mexico-10-05-2026/event/1400642AA32D84D7"
+    event_id: "1400642AA32D84D7"
+
   # ── 🇺🇸 USA: Stanford, CA — Stanford Stadium ──
   - name: "ARIRANG - Stanford Day 1 (May 16)"
     url: "https://www.ticketmaster.com/bts-world-tour-arirang-in-stanford-stanford-california-05-16-2026/event/1C006429C95EA2B8"
